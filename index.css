@@ -1,0 +1,85 @@
+body, html
+{
+    margin:0;
+    padding:0;
+    background-color: #4158D0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+main
+{
+    width:60%;
+    min-height:80vh;
+    background: linear-gradient(
+        to right bottom,
+        rgb(255 255 255 / 32%),
+        rgb(255 255 255 / 17%)
+    );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index:999;
+}
+
+.planet
+{
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ring
+{
+    position: absolute;
+    border-radius: 50%;
+    height: 65rem;
+    width: 65rem;
+    right:-17em;
+    bottom:-17em;
+    border:10px solid #bd31b3;
+}
+
+#planet1
+{
+    height: 55rem;
+    width: 55rem;
+    right:-10em;
+    bottom:-10em;
+    background-color: #4158D0;
+    background-image: linear-gradient(116deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    z-index:1;
+}
+
+#planet2
+{
+    height: 20rem;
+    width: 20rem;
+    right: 35em;
+    bottom: -15px;
+    filter: blur(10px);
+    background-color: #4158D0;
+    background-image: linear-gradient(334deg, #4158D0 0%, #C850C0 100%);
+}
+#planet3
+{
+    height:50rem;
+    width:50rem;
+    top:-25rem;
+    left:-25rem;
+    filter: blur(155px);
+    background-color: #fd97fff0;
+}
+
+.small-planet
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4158D0;
+    background-image:linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
