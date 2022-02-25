@@ -9,11 +9,13 @@ body, html
     justify-content: center;
     align-items: center;
     overflow:hidden;
+    font-family: 'Neonderthaw', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 main
 {
-    width:60%;
+    width:70%;
     min-height:80vh;
     background: linear-gradient(
         to right bottom,
@@ -82,4 +84,93 @@ main
     border-radius: 50%;
     background-color: #4158D0;
     background-image:linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.side-menu
+{
+    background-color: rgb(255 255 255 / 42%);
+    width: 30%;
+    min-height: 80vh;
+    max-height: 100%;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.side-menu div
+{
+    width:100%;
+    height:150px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.692);
+    margin-bottom:25px;
+    position:relative;
+}
+
+.center
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center img
+{
+    border-radius:50%;
+    width:80px;
+    height:80px;
+}
+.avatar-name
+{
+    margin-left:10px;
+    font-size:2.5rem;
+}
+
+.menu-item
+{
+    width:100%;
+    height:80px;
+    text-decoration: none;
+    justify-content: flex-start;
+    font-size:2.5rem;
+    color:#575757;
+    box-sizing: border-box;
+    padding-left:25px;
+    width:100%;
+    height:80px;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+.menu-item:hover
+{
+    transform:scale(1.05);
+    background-color:rgba(255, 255, 255, 0.656);
+    backdrop-filter:blur(4px);
+}
+
+.menu-item p
+{
+    margin:0 0 0 15px ;
+}
+
+footer
+{
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width:100%;
+    justify-content: space-evenly !important;
+    box-sizing: border-box;
+    padding:0 25px;
+}
+footer a
+{
+    text-decoration: none;
+    color:rgb(92, 92, 92);
+    font-size:1.1rem;
+    opacity:0.9;
+}
+footer a:hover
+{
+    text-decoration: underline;
+    opacity:1;
 }
