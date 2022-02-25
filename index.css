@@ -13,23 +13,7 @@ body, html
     font-family: 'Roboto', sans-serif;
 }
 
-main
-{
-    width:70%;
-    min-height:80vh;
-    background: linear-gradient(
-        to right bottom,
-        rgb(255 255 255 / 32%),
-        rgb(255 255 255 / 17%)
-    );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    z-index:999;
-}
-
+/* Background */
 .planet
 {
   position: absolute;
@@ -86,6 +70,24 @@ main
     background-image:linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
+/* Main glass display */
+main
+{
+    width:70%;
+    min-height:80vh;
+    background: linear-gradient(
+        to right bottom,
+        rgb(255 255 255 / 32%),
+        rgb(255 255 255 / 17%)
+    );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index:999;
+}
+
 .side-menu
 {
     background-color: rgb(255 255 255 / 42%);
@@ -105,14 +107,7 @@ main
     position:relative;
 }
 
-.center
-{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center img
+.side-menu div img
 {
     border-radius:50%;
     width:80px;
@@ -129,7 +124,7 @@ main
     width:100%;
     height:80px;
     text-decoration: none;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     font-size:2.5rem;
     color:#575757;
     box-sizing: border-box;
@@ -205,8 +200,6 @@ section
     font-size:1.3rem;
 }
 
-
-
 form
 {
     width:50%;
@@ -258,15 +251,23 @@ button:hover
     background-color:rgb(255 255 255 / 40%);
 }
 
+/*Helpers*/
+.center
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: white;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
-  }
+}
