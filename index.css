@@ -23,7 +23,7 @@ main
         rgb(255 255 255 / 17%)
     );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 13px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -174,3 +174,99 @@ footer a:hover
     text-decoration: underline;
     opacity:1;
 }
+
+section
+{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.content
+{
+    width:70%;
+    min-height:80vh;
+    max-height:100%;
+    padding-left:25px;
+    box-sizing: border-box;
+}
+
+.content
+{
+    color:white;
+}
+.content h1
+{
+    font-size:4rem;
+    margin:15px 0 0 0;
+}
+.content p
+{
+    margin:0;
+    font-size:1.3rem;
+}
+
+
+
+form
+{
+    width:50%;
+    margin:0 auto;
+}
+
+.first
+{
+    margin-top:50px;
+}
+
+label
+{
+    display: block;
+    font-size:2rem;
+    margin-top:25px;
+}
+
+input
+{
+    font-size:1.5rem;
+    border:1px solid white;
+    border-radius:5px;
+    backdrop-filter: blur(5px);
+    background-color:rgb(255 255 255 / 20%);;
+    opacity:0.7;
+    padding:10px;
+    width:70%;
+}
+
+button
+{
+    display:block;
+    font-size:2.2rem;
+    margin-top:50px;
+    width: 75%;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid white;
+    cursor:pointer;
+    background-color:rgb(255 255 255 / 17%);
+    backdrop-filter: blur(5px);
+    color:white;
+    transition:all 0.3s;
+}
+
+button:hover
+{
+    background-color:rgb(255 255 255 / 40%);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
